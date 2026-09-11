@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flynn Cook</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: black;
+      background: white;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .info h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .info p {
+      margin: 0 0 18px;
+    }
+
+    .links a {
+      color: black;
+      margin-right: 14px;
+    }
+
+    .photo {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .links a {
+        margin: 0 7px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="profile">
+
+      <div class="info">
+        <h1>Your Name</h1>
+        <p>Vanderbilt University</p>
+
+        <div class="links">
+          <a href="cv.pdf">CV</a>
+          <a href="https://www.linkedin.com/in/flynn-cook/">LinkedIn</a>
+          <a href="mailto:flynn.w.cook@vanderbilt.edu">Email</a>
+        </div>
+      </div>
+
+      <img
+        class="photo"
+        src="photo.jpg"
+        alt="Flynn Cook"
+      >
+
+    </div>
+  </main>
+</body>
+</html>
