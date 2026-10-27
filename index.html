@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +16,25 @@
 
     main {
       min-height: 100vh;
+      max-width: 200vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      gap: 40px;
     }
 
     .profile {
       display: flex;
       align-items: center;
       gap: 60px;
+    }
+
+    .things {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
     }
 
     .info h1 {
@@ -77,13 +88,71 @@
         </div>
       </div>
 
-      <img
-        class="photo"
-        src="photo.jpeg"
-        alt="Flynn Cook"
-      >
+      <img class="photo" src="photo.jpeg" alt="Flynn Cook">
 
     </div>
+    <div class="things">
+      <details>
+        <summary>About</summary>
+        <ul>
+          <p>Born 2008 in Palo Alto, California, United States. Now living in and around Cincinnati, Ohio and Nashville, Tennessee.</p>
+          <p>Graduating from Vanderbilt University in 2030 with a Bachelor of Science in Mathematics.</p>
+          <p>Reach out via email and an answer will follow! I am interested in graduate studies :) </p>
+        </ul>
+
+      </details>
+      <details>
+        <summary>Projects and presentations</summary>
+        <ul>
+          <li><i>Math in Games: Combinatorics and Graph Theory in Chess and Poker.</i> <br> For the Vanderbilt University Mathematics Club, October 27, 2026.</li>
+          <li><i>Introduction to Knot Theory: Invariances, Alexander Polynomial, Jones Polynomial, Applications.</i> <br> For the Vanderbilt University Department of Mathematics, sometime November 2026. <br> Directed reading program advised by Andrew Parks.</li>
+        </ul>
+
+      </details>
+      <details>
+        <summary>Relevant coursework</summary>
+        <p><i>Coursework during and after Fall 2026 at Vanderbilt University. <br> Coursework before at Western Kentucky University via <a href="https://www.wku.edu/academy/">Gatton Academy of Mathematics and Science</a>. <br> Italics indicates in progress or scheduled coursework.</i></p>
+        <p> Spring 2027 </p>
+        <ul>
+          <li><i>MATH 2820 Introduction to Probability and Mathematical Statistics</i></li>
+          <li><i>MATH 2820L Statistics Laboratory</i></li>
+          <li><i>MATH 3100 Introduction to Analysis</i></li>
+          <li><i>MATH 3890 Formal Verification</i></li>
+        </ul>
+        <p> Fall 2026 </p>
+        <ul>
+          <li><i>MATH 3300 Abstract Algebra </i></li>
+        </ul>
+        <p> Spring 2026 </p>
+        <ul>
+          <li>CS 290 Computer Science II</li>
+          <li>MATH 310 Introduction to Discrete Mathematics</li>
+          <li>MATH 331 Differential Equations</li>
+        </ul>
+        <p> Fall 2025 </p>
+        <ul>
+          <li>MATH 237 Multivariable Calculus</li>
+          <li>MATH 310 Introduction to Linear Algebra</li>
+          <li>PHYS 255 University Physics I</li>
+        </ul>
+        <p> Spring 2025 </p>
+        <ul>
+          <li>MATH 137 Calculus II</li>
+        </ul>
+        <p> Fall 2024 </p>
+        <ul>
+          <li>CS 180 Computer Science I</li>
+          <li>MATH 136 Calculus I</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Miscellaneous</summary>
+        <p>Human languages: English (Native), Russian (B2)</p>
+        <p>Computer languages: LaTeX, Java, Lean 4, HTML/CSS</p>
+      </details>
+    </div>
+
   </main>
 </body>
+
 </html>
